@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Octoedge Course Page</title>
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="assets/images (1).jpeg" class="logo" /></a>
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>Menu</a></li>
+          <li><a>What's up</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textbox">
+          <h2>
+            It's not just Institute. <br />
+            It's <span>OctoEdge</span>
+          </h2>
+          <p>
+            Choose Us As Reliable Technical Partners, Share Your Ideas, and get the best product build.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="imgbox">
+          <img src="assets/HTML5_Logo_512.png" class="starbucks">
+        </div>
+      </div>
+      <ul class="thumb">
+        <li><img src="assets/HTML5_Logo_512.png" onclick="imageSlider('assets/HTML5_Logo_512.png');changeCircleColor('#7de4bb')" alt=""></li>
+        <li><img src="assets/csslogo1.png" onclick="imageSlider('assets/csslogo1.png');changeCircleColor('#eb7495')" alt=""></li>
+        <li><img src="assets/jslogo1.png" onclick="imageSlider('assets/jslogo1.png');changeCircleColor('#d752b1')" alt=""></li>
+      </ul>
+      <ul class="sci">
+        <li><a href=""><img src="assets/facebook.png" alt=""></a></li>
+        <li><a href=""><img src="assets/twitter.png" alt=""></a></li>
+        <li><a href=""><img src="assets/instagram.png" alt=""></a></li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function imageSlider(source){
+        document.querySelector('.starbucks').src = source;
+      }
+      function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+      }
+    </script>
+  </body>
+</html>
